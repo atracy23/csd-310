@@ -1,17 +1,6 @@
 import mysql.connector
 from mysql.connector import errorcode
 
-
-# from flask import Flask
-# from flask_sqlalchemy import SQLAlchemy
-
-
-# app = Flask(__name__)
-# app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://jcran:Binx@localhost/movies.db'
-# from app import db
-# db = SQLAlchemy(app)
-
-
 config = {
     "user": "movies_user",
     "password": "popcorn",
@@ -35,8 +24,6 @@ except mysql.connector.Error as err:
 
     else:
         print(err)
-
-
 
 finally:
 
